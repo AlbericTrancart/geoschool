@@ -25,13 +25,16 @@ jobs:
         run: |
           yarn type
           yarn lint
+          yarn dependency
       - name: Lint backend
         working-directory: ./backend
         run: |
           yarn type
           yarn lint
+          yarn dependency
       - name: Lint frontend
         working-directory: ./frontend
         run: |
           yarn type
           yarn lint
+          yarn dependency
