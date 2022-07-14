@@ -6,7 +6,7 @@ import {
   Description,
   Main,
   Title,
-} from "../components/component";
+} from "../components/component.style";
 
 export default function Home() {
   return (

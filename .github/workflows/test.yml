@@ -37,4 +37,5 @@ jobs:
         run: |
           yarn type
           yarn lint
+          yarn stylelint
           yarn dependency

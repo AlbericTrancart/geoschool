@@ -4,5 +4,16 @@
   "eslint.workingDirectories": ["frontend", "backend", "shared"],
   "editor.codeActionsOnSave": {
     "source.fixAll.eslint": true
-  }
+  },
+  "stylelint.validate": [
+    "css",
+    "less",
+    "postcss",
+    "typescript",
+    "typescriptreact"
+  ],
+  "stylelint.reportNeedlessDisables": true,
+  "css.validate": false,
+  "less.validate": false,
+  "scss.validate": false
 }
