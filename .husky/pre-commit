@@ -1,0 +1,6 @@
+#!/bin/sh
+. "$(dirname "$0")/_/husky.sh"
+
+cd shared && yarn lint && yarn type && cd ..
+cd backend && yarn lint && yarn type && cd ..
+cd frontend && yarn lint && yarn type && cd ..

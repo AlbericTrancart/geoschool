@@ -1,18 +1,20 @@
 {
-    "name": "@geoschool/main",
-    "private": true,
-    "version": "1.0.0",
-    "workspaces": [
-      "frontend",
-      "backend",
-      "shared"
-    ],
-    "author": "Albéric Trancart <alberic.trancart@gmail.com>",
-    "license": "UNLICENSED",
-    "scripts": {},
-    "dependencies": {
-    },
-    "devDependencies": {
-    }
+  "name": "@geoschool/main",
+  "private": true,
+  "version": "1.0.0",
+  "workspaces": [
+    "frontend",
+    "backend",
+    "shared"
+  ],
+  "author": "Albéric Trancart <alberic.trancart@gmail.com>",
+  "license": "UNLICENSED",
+  "scripts": {
+    "dev": "concurrently \"cd shared && yarn dev\" \"cd backend && yarn dev\" \"cd frontend && yarn dev\"",
+    "prepare": "husky install"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "husky": "^8.0.1"
   }
-  
+}
