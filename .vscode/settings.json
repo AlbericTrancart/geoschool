@@ -1,12 +1,8 @@
 {
-    "typescript.tsdk": "frontend/node_modules/typescript/lib",
-    "editor.formatOnSave": true,
-    "eslint.workingDirectories": [
-      "frontend", 
-      "backend",
-      "shared"
-    ],
-    "editor.codeActionsOnSave": {
-      "source.fixAll.eslint": true
-    },
+  "typescript.tsdk": "frontend/node_modules/typescript/lib",
+  "editor.formatOnSave": true,
+  "eslint.workingDirectories": ["frontend", "backend", "shared"],
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": true
+  }
 }

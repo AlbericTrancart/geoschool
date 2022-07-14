@@ -1,14 +1,14 @@
 {
-    "extends": "../tsconfig.json",
-    "compilerOptions": {
-      "baseUrl": "src",
-      "composite": true,
-      "outDir": "./dist/compiled",
-      "lib": ["dom"],
-      "emitDeclarationOnly": true,
-      "declaration": true,
-      "declarationMap": true
-    },
-    "exclude": ["dist"],
-    "include": ["**/*.ts"]
-  }
+  "extends": "../tsconfig.json",
+  "compilerOptions": {
+    "baseUrl": "src",
+    "composite": true,
+    "outDir": "./dist/compiled",
+    "lib": ["dom"],
+    "emitDeclarationOnly": true,
+    "declaration": true,
+    "declarationMap": true
+  },
+  "exclude": ["dist"],
+  "include": ["**/*.ts"]
+}
