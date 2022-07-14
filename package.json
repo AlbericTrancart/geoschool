@@ -11,7 +11,9 @@
   "license": "UNLICENSED",
   "scripts": {
     "dev": "concurrently \"cd shared && yarn dev\" \"cd backend && yarn dev\" \"cd frontend && yarn dev\"",
-    "prepare": "husky install"
+    "prepare": "husky install",
+    "test": "DEBUG_PRINT_LIMIT=100000 jest --watch --maxWorkers=2",
+    "test:ci": "jest --coverage --maxWorkers=2 --detectOpenHandles --forceExit --logHeapUsage"
   },
   "dependencies": {},
   "devDependencies": {

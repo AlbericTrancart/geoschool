@@ -26,5 +26,6 @@ yarn-debug.log*
 yarn-error.log*
 lerna-debug.log*
 
-# Dependencies
+# Dependencies and build
 /node_modules
+/coverage
