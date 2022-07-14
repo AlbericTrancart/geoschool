@@ -1,4 +1,5 @@
 import { createGlobalStyle } from "styled-components";
+import { colors, typography } from "config/stylesheet";
 
 export const CssResets = createGlobalStyle`
   /* stylelint-disable */
@@ -29,8 +30,14 @@ export const CssResets = createGlobalStyle`
     display: block; 
   }
 
+  html {
+    font-size: 100%;
+  }
+
   body {
     line-height: 1;
+    ${typography.main};
+    color: ${colors.darkerGrey};
   }
 
   ol, ul {
@@ -59,5 +66,9 @@ export const CssResets = createGlobalStyle`
 
   * {
     box-sizing: border-box;
+  }
+
+  strong {
+    font-weight: bold;
   }
 `;

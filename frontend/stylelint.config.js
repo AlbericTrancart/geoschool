@@ -7,9 +7,12 @@ module.exports = {
     "stylelint-config-styled-components",
     "stylelint-a11y/recommended",
   ],
+  ignoreFiles: ["backend", "shared", "node_modules", "**/*.tsx"],
   rules: {
     // Giving false positives with styled-components
     "value-keyword-case": null,
+    "function-name-case": null,
+    "function-no-unknown": null,
 
     /*
      * These rules are here to prevent CSS bad practices.

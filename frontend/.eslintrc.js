@@ -35,8 +35,7 @@ module.exports = {
         "react-hooks/rules-of-hooks": "error",
         "react-hooks/exhaustive-deps": "warn",
         "risxss/catch-potential-xss-react": "error",
-        // TODO debt re-enable these rules
-        // "import/no-unresolved": "off",
+        "import/no-unresolved": "off",
       },
     },
   ],
