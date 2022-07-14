@@ -1,0 +1,29 @@
+name: test
+on:
+  workflow_call:
+  push:
+    # Don't run this workflow twice for these branches
+    # (deploy workflows will call this workflow manually)
+    branches-ignore:
+      - main
+jobs:
+  lint:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - uses: ./.github/actions/setup
+      - name: Lint shared directory
+        working-directory: ./shared
+        run: |
+          yarn type
+          yarn lint
+      - name: Lint backend
+        working-directory: ./backend
+        run: |
+          yarn type
+          yarn lint
+      - name: Lint frontend
+        working-directory: ./frontend
+        run: |
+          yarn type
+          yarn lint

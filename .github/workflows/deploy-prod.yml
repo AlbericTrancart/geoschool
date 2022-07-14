@@ -1,0 +1,14 @@
+name: test and deploy prod
+on:
+  push:
+    branches:
+      - main
+jobs:
+  test:
+    uses: ./.github/workflows/test.yml
+
+  deploy:
+    needs: [test]
+    uses: ./.github/workflows/deploy.yml
+    with:
+      environment: prod
