@@ -3,7 +3,8 @@
     "editor.formatOnSave": true,
     "eslint.workingDirectories": [
       "frontend", 
-      "backend"
+      "backend",
+      "shared"
     ],
     "editor.codeActionsOnSave": {
       "source.fixAll.eslint": true
