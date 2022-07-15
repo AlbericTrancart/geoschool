@@ -39,7 +39,10 @@ export default class MyDocument extends Document {
             href="https://fonts.googleapis.com/css2?family=Lato&display=optional"
             rel="stylesheet"
           />
+          <link rel="icon" href="images/favicon.png" />
+          <title>GéoSchool</title>
         </Head>
+
         <body>
           <Main />
           <NextScript />
